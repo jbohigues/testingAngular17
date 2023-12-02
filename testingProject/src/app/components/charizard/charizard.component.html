@@ -1,0 +1,8 @@
+<h2>Pokemon</h2>
+
+@if (!charizard) {
+<h3>Loading...</h3>
+} @else {
+<h3>{{ charizard.name | titlecase }}</h3>
+<img [src]="charizard.sprites.front_default" [alt]="charizard.name" />
+}
